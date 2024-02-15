@@ -1,0 +1,24 @@
+/* Write your CSS here */
+/* Write your CSS here */
+.aboutcontainer {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+.darkaboutsub {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+.lightaboutsub {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+}
+
+.aboutimage {
+  width: 100px;
+  height: 100px;
+}

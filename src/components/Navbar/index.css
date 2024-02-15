@@ -1,0 +1,38 @@
+/* Write your CSS here */
+.darknavcontainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #333333;
+}
+.lightnavcontainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #dcdcdc;
+}
+.footlogo {
+  width: 25px;
+  height: 25px;
+}
+.menucontainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.darkhome {
+  font-size: 10px;
+  color: #ffffff;
+}
+.lighthome {
+  font-size: 10px;
+  color: black;
+}
+.darkabout {
+  font-size: 10px;
+  color: #ffffff;
+}
+.lightabout {
+  font-size: 10px;
+  color: black;
+}

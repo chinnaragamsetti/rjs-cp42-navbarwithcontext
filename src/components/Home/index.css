@@ -1,0 +1,23 @@
+/* Write your CSS here */
+.homecontainer {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+.darkhomesub {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+.lighthomesub {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+}
+
+.homeimage {
+  width: 100px;
+  height: 100px;
+}

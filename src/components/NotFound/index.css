@@ -1,0 +1,20 @@
+/* Write your CSS here */
+.darknotsubcontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+
+.lightnotsubcontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+}
+.notfoundimage {
+  width: 100px;
+  height: 100px;
+}
