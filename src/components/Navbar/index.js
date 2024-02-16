@@ -1,6 +1,8 @@
 // Write your code he
+import {Link} from 'react-router-dom'
 
 import ThemeContext from '../../context/ThemeContext'
+
 import './index.css'
 
 const Navbar = () => (
@@ -12,41 +14,54 @@ const Navbar = () => (
         toggleTheme()
       }
       return (
-        <Navbar
-          className={isDarkTheme ? 'darknavcontainer' : 'lightnavcontainer'}
-        >
+        <>
           {isDarkTheme ? (
-            <img
-              src="https://assets.ccbp.in/frontend/react-js/website-logo-dark-theme-img.png"
-              alt="footlogo"
-              className="footlogo"
-            />
+            <div className="darknavcontainer">
+              <img
+                src="https://assets.ccbp.in/frontend/react-js/website-logo-dark-theme-img.png"
+                alt="website logo"
+                className="footlogo"
+              />
+              <ul className="menucontainer">
+                <Link to="/">
+                  <li className="darkhome">Home</li>
+                </Link>
+                <Link to="/about">
+                  <li className="darkabout">About</li>
+                </Link>
+              </ul>
+              <img
+                src="https://assets.ccbp.in/frontend/react-js/light-theme-img.png"
+                alt="light"
+                className="footlogo"
+                onClick={onChangeTheme}
+              />
+            </div>
           ) : (
-            <img
-              src="https://assets.ccbp.in/frontend/react-js/website-logo-light-theme-img.png"
-              alt="footlogo"
-              className="footlogo"
-            />
+            <div className="lightnavcontainer">
+              <img
+                src="https://assets.ccbp.in/frontend/react-js/website-logo-light-theme-img.png"
+                alt="website logo"
+                className="footlogo"
+              />
+              <ul className="menucontainer">
+                <Link to="/">
+                  <li className="lighthome">Home</li>
+                </Link>
+                <Link to="/about">
+                  <li className="lightabout">About</li>
+                </Link>
+              </ul>
+              <img
+                src="https://assets.ccbp.in/frontend/react-js/dark-theme-img.png"
+                alt="dark"
+                data-testid="theme"
+                className="footlogo"
+                onClick={onChangeTheme}
+              />
+            </div>
           )}
-          <div className="menucontainer">
-            <p className={isDarkTheme ? 'darkhome' : 'lighthome'}>Home</p>
-            <p className={isDarkTheme ? 'darkabout' : 'lightabout'}>About</p>
-          </div>
-          {isDarkTheme ? (
-            <img
-              src="https://assets.ccbp.in/frontend/react-js/dark-theme-img.png"
-              alt="themelogo"
-              className="footlogo"
-              onClick={onChangeTheme}
-            />
-          ) : (
-            <img
-              src="https://assets.ccbp.in/frontend/react-js/light-theme-img.png"
-              alt="themelogo"
-              className="footlogo"
-            />
-          )}
-        </Navbar>
+        </>
       )
     }}
   </ThemeContext.Consumer>

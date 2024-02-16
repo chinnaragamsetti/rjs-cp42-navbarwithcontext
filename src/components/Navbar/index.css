@@ -4,16 +4,21 @@
   flex-direction: row;
   justify-content: space-between;
   background-color: #333333;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 .lightnavcontainer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   background-color: #dcdcdc;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 .footlogo {
   width: 25px;
   height: 25px;
+  cursor: pointer;
 }
 .menucontainer {
   display: flex;
@@ -23,16 +28,20 @@
 .darkhome {
   font-size: 10px;
   color: #ffffff;
+  margin-right: 10px;
 }
 .lighthome {
   font-size: 10px;
   color: black;
+  margin-right: 10px;
 }
 .darkabout {
   font-size: 10px;
   color: #ffffff;
+  margin-right: 10px;
 }
 .lightabout {
   font-size: 10px;
   color: black;
+  margin-right: 10px;
 }

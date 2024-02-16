@@ -6,18 +6,30 @@
 }
 .darkhomesub {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: black;
+  height: 100%;
 }
 .lighthomesub {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: #ffffff;
+  height: 100%;
 }
 
-.homeimage {
+.homelightimage {
   width: 100px;
   height: 100px;
+}
+.darkpara {
+  font-size: 40px;
+  color: #ffffff;
+}
+.lightpara {
+  font-size: 40px;
+  color: black;
 }

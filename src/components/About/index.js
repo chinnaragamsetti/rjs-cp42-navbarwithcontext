@@ -1,8 +1,9 @@
 // Write your code here
 import {Link} from 'react-router-dom'
 
-import Header from '../Navbar'
+import Navbar from '../Navbar'
 import ThemeContext from '../../context/ThemeContext'
+import './index.css'
 
 const Home = () => (
   <ThemeContext.Consumer>
@@ -10,25 +11,27 @@ const Home = () => (
       const {isDarkTheme} = value
       const renderDarkhome = () => (
         <>
-          <Header />
-          <div className={isDarkTheme ? 'darkaboutsub' : 'lighthomesub'}>
+          <Navbar />
+          <div className={isDarkTheme ? 'darkaboutsub' : 'lightaboutsub'}>
             <img
               src="https://assets.ccbp.in/frontend/react-js/about-dark-img.png"
-              alt="homelight"
-              className="homelightimage"
+              alt="about"
+              className="aboutlightimage"
             />
+            <h1 className="darktext">About</h1>
           </div>
         </>
       )
       const renderLighthome = () => (
         <>
-          <Header />
-          <div className={isDarkTheme ? 'darkaboutsub' : 'lighthomesub'}>
+          <Navbar />
+          <div className={isDarkTheme ? 'darkaboutsub' : 'lightaboutsub'}>
             <img
               src="https://assets.ccbp.in/frontend/react-js/about-light-img.png"
-              alt="homelight"
-              className="homelightimage"
+              alt="theme"
+              className="aboutlightimage"
             />
+            <h1 className="lighttext">About</h1>
           </div>
         </>
       )

@@ -1,10 +1,16 @@
 /* Write your CSS here */
+.notfoundmaincontainer {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
 .darknotsubcontainer {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: black;
+  height: 100%;
 }
 
 .lightnotsubcontainer {
@@ -13,8 +19,25 @@
   justify-content: center;
   align-items: center;
   background-color: #ffffff;
+  height: 100%;
 }
 .notfoundimage {
-  width: 100px;
-  height: 100px;
+  width: 300px;
+  height: 300px;
+}
+.lightlost {
+  font-size: 20px;
+  color: #ffffff;
+}
+.darklost {
+  font-size: 20px;
+  color: black;
+}
+.lightseem {
+  font-size: 20px;
+  color: #ffffff;
+}
+.darkseem {
+  font-size: 20px;
+  color: black;
 }
