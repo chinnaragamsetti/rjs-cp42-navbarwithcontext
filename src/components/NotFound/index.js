@@ -16,7 +16,7 @@ const NotFound = () => (
               alt="not found"
               className="notfoundimage"
             />
-            <p className="lightlost">Lost You Way?</p>
+            <h1 className="lightlost">Lost You Way</h1>
             <p className="lightseem">
               We cannot seem to find the page you looking for.
             </p>
@@ -29,10 +29,10 @@ const NotFound = () => (
           <div className="lightnotsubcontainer">
             <img
               src="https://assets.ccbp.in/frontend/react-js/not-found-img.png "
-              alt="homelight"
+              alt="not found"
               className="notfoundimage"
             />
-            <p className="darklost">Lost Your Way</p>
+            <h1 className="darklost">Lost Your Way</h1>
             <p className="darkseem">
               We cannot seem to find the page you looking for.
             </p>

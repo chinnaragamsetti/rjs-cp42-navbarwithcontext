@@ -32,7 +32,7 @@ const Navbar = () => (
               </ul>
               <img
                 src="https://assets.ccbp.in/frontend/react-js/light-theme-img.png"
-                alt="light"
+                alt="theme"
                 className="footlogo"
                 onClick={onChangeTheme}
               />
@@ -54,7 +54,7 @@ const Navbar = () => (
               </ul>
               <img
                 src="https://assets.ccbp.in/frontend/react-js/dark-theme-img.png"
-                alt="dark"
+                alt="theme"
                 data-testid="theme"
                 className="footlogo"
                 onClick={onChangeTheme}

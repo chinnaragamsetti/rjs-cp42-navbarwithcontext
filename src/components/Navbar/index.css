@@ -6,6 +6,7 @@
   background-color: #333333;
   padding-left: 40px;
   padding-right: 40px;
+  padding-top: 10px;
 }
 .lightnavcontainer {
   display: flex;
@@ -14,6 +15,7 @@
   background-color: #dcdcdc;
   padding-left: 40px;
   padding-right: 40px;
+  padding-top: 10px;
 }
 .footlogo {
   width: 25px;
@@ -24,24 +26,29 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  list-style-type: none;
 }
 .darkhome {
   font-size: 10px;
   color: #ffffff;
   margin-right: 10px;
+  outline: none;
 }
 .lighthome {
   font-size: 10px;
   color: black;
   margin-right: 10px;
+  outline: none;
 }
 .darkabout {
   font-size: 10px;
   color: #ffffff;
   margin-right: 10px;
+  outline: none;
 }
 .lightabout {
   font-size: 10px;
   color: black;
   margin-right: 10px;
+  outline: none;
 }

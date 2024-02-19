@@ -16,7 +16,7 @@ const Home = () => (
           <div className={isDarkTheme ? 'darkhomesub' : 'lighthomesub'}>
             <img
               src="https://assets.ccbp.in/frontend/react-js/home-dark-img.png"
-              alt="theme"
+              alt="home"
               className="homelightimage"
             />
             <h1 className="darkpara">Home</h1>
